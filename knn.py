@@ -1,4 +1,3 @@
-
 # K-nearest Neighbor classifier in Python.
 # CoAuthor: Cody
 
@@ -40,8 +39,6 @@ for fileIndex in range(2):
       testLineLabel = testLine[numTrainingColumns - 1]
       distances = []
       for line in x_train:
-        # print(line)
-        # map out to integers
         distances.append([
           distance.euclidean(line[0:numTrainingColumns - 2], testLine[0:numTrainingColumns - 2]),
           line[numTrainingColumns - 1]
